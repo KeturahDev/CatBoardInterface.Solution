@@ -9,9 +9,9 @@ namespace CatBoardInterface.Models
   public class Post
   {
     public int PostId { get; set; }
+    public int BoardId { get; set; }
     public string Title { get; set; }
     public string Body { get; set; }
-
     public int score { get; set; }
 
     // public ICollection<Comment> Comments { get; set; } for comments later on

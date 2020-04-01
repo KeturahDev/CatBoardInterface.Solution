@@ -1,5 +1,5 @@
 # CatBoardInterface
-### By **Keturah Howard, Jamison Cozart, Dusty McCord**  March 30th 2020
+### By **Keturah Howard, Jamison Cozart, Dusty McCord, Zakkrey Short**  March 30th 2020
 
 ASP.NET core MVC application to display views that interact with the CatBoardApi application.
 
@@ -25,7 +25,7 @@ Download the .zip file and extract all files into directory of your choice OR cl
 
 1. Clone the repository:
     ```
-    git clone https://github.com/KeturahDev/CatBoardApi.git
+    git clone https://github.com/KeturahDev/CatBoardApi.Solution.git
     ```
 
 2. Restore all dependencies:
@@ -66,4 +66,4 @@ Currently there's no known bugs, however, if there are any issues running this w
 
 Licensed under the MIT license.
 
-&copy; 2020 Keturah Howard, Jamison Cozart, Dusty McCord.
+&copy; 2020 Keturah Howard, Jamison Cozart, Dusty McCord, Zakkrey Short.

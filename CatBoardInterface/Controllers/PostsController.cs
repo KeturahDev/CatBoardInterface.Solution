@@ -42,6 +42,7 @@ namespace CatBoardInterface.Controllers
     }
     public ActionResult Edit(int boardId, int postId)
     {
+      ViewBag.BoardId = boardId;
       var thisPost = Post.GetDetails(boardId, postId);
       return View(thisPost);
     }
