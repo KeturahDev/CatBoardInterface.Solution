@@ -34,5 +34,31 @@ namespace CatBoardInterface.Controllers
       Board.Post(board);
       return RedirectToAction("Index");
     }
+
+    public ActionResult Edit(int id)
+    {
+      var thisBoard = Board.GetDetails(id);
+      return View(thisBoard);
+    }
+
+    [HttpPost]
+    public ActionResult Edit(Board board)
+    {
+
+      return RedirectToAction("Details", new { id = board.BoardId });
+    }
+
+    public ActionResult Delete(int id)
+    {
+      var thisBoard = Board.GetDetails(id);
+      return View(thisBoard);
+    }
+
+    [HttpPost, ActionName("Delete")]
+    public ActionResult DeleteConfirmed(int id)
+    {
+      Board.Delete(id);
+      return RedirectToAction("Index");
+    }
   }
 }

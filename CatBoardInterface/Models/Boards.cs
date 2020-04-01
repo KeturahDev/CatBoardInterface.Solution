@@ -44,15 +44,15 @@ namespace CatBoardInterface.Models
       var apiCallTask = ApiHelper.Post(jsonBoard);
     }
 
-    // public static void Put(Animal animal)
-    // {
-    //   string jsonAnimal = JsonConvert.SerializeObject(animal);
-    //   var apiCallTask = ApiHelper.Put(animal.AnimalId, jsonAnimal);
-    // }
+    public static void Put(Board board)
+    {
+      string jsonBoard = JsonConvert.SerializeObject(board);
+      var apiCallTask = ApiHelper.Put(board.BoardId, jsonBoard);
+    }
 
-    // public static void Delete(int id)
-    // {
-    //   var apiCallTask = ApiHelper.Delete(id);
-    // }
+    public static void Delete(int id)
+    {
+      var apiCallTask = ApiHelper.Delete(id);
+    }
   }
 }
