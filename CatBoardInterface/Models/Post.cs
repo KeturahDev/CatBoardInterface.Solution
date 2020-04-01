@@ -38,7 +38,7 @@ namespace CatBoardInterface.Models
     public static void CreatePost(int boardId, Post post)
     {
       string jsonPost = JsonConvert.SerializeObject(post);
-      var apiCallTask = ApiHelper.PostCreate(boardId, jsonPost);
+      var apiCallTask = ApiHelper.CreatePost(boardId, jsonPost);
     }
 
     public static void PutPost(int boardId, Post post)

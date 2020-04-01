@@ -30,6 +30,7 @@ namespace CatBoardInterface.Controllers
 
     public ActionResult Create(int boardId)
     {
+      ViewBag.boardId = boardId;
       return View();
     }
 

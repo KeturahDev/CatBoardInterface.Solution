@@ -38,10 +38,10 @@ namespace CatBoardInterface.Models
       var response = await client.ExecuteTaskAsync(request);
     }
 
-    public static async Task PostCreate(int boardId, string newPost)
+    public static async Task CreatePost(int boardId, string newPost)
     {
       RestClient client = new RestClient("http://localhost:5000/api/");
-      RestRequest request = new RestRequest($"boards/{boardId}", Method.POST);
+      RestRequest request = new RestRequest($"boards/{boardId}/posts", Method.POST);
       request.AddHeader("Content-Type", "application/json");
       request.AddJsonBody(newPost);
       var response = await client.ExecuteTaskAsync(request);
