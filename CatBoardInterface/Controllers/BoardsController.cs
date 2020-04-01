@@ -44,7 +44,7 @@ namespace CatBoardInterface.Controllers
     [HttpPost]
     public ActionResult Edit(Board board)
     {
-
+      Board.Put(board);
       return RedirectToAction("Details", new { id = board.BoardId });
     }
 
